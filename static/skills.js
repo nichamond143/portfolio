@@ -1,0 +1,23 @@
+let SKILLS = [
+    "HTML: Picked up HTML through Harvard’s CS50, and I’m pretty comfortable with it.",
+    "CSS:  Also from CS50. I'm also well-versed in CSS.",
+    "Javascript: The first language I learned thanks to Khan Academy. Oddly enough, I’m still not as comfortable with it as I’d like to be.",
+    "Bootstrap: My first framework, introduced during Harvard CS50.",
+    "Vue.js: Picked up Vue.js in a web development class. My team and I made a Pokémon-themed website.",
+    "Nuxt.js: Learned Nuxt.js while developing the Puangun web application with the CITS team.",
+    "Vuetify: Vuetify naturally came alongside Vue.js, so I picked it up as well.",
+    "Dart: Learned Dart so I could use Flutter.",
+    "Flutter: Developed my first mobile app, Aan Mai, using Flutter in my mobile development course. Since then, I've been using Flutter for most of my webapp projects.",
+    "Java: Learned Java in my second year through a Java OODP course. I understand the fundamentals, and I would like to learn more in the future.",
+    "Python: My Python experience comes from Harvard’s CS50, CS50AI, and my senior project, where I worked on a computer vision model to detect activities. More on that in the Projects section.",
+    "Scikit-learn: I learned Scikit-learn during my intelligent computing class where I train a model to predict the Global Innovation Index (GII) according to Gender Equality Factors. That was in year 2, so I could really use a refresher.",
+    "YOLO: Used YOLO in my senior project to train a custom pose estimation model for activity detection—it was an exciting intro to machine learning and computer vision.",
+    "SQL:Learned SQL in CS50 and Database Systems class. My team used MySQL for an osteoporosis journally website for a class project.",
+    "Firebase: Used Firebase as the backend for several Flutter mobile apps. Some services I'm familiar with are Firebase Authen, Firestore, Realtime DB, Cloud Functions, and Cloud Messenging.",
+    "Git: Started using Git in Year 2. After some hiccups, I’ve since gotten much more comfortable with it, especially after working on the CITS team.",
+    "Figma: I use Figma regularly for web and mobile prototyping.",
+    "Jira: Used Jira for managing our senior project’s backlog, sprints, and deployment deadlines.",
+    "Vs Code: My preferred IDE for most development work.",
+    "Eclispe: My go-to for Java projects.",
+    "Jupyter: I use Jupyter Notebook for training machine learning models and other data science work."
+]

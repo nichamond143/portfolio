@@ -1,0 +1,113 @@
+{% extends "layout.html" %}
+
+{% block title %}
+About Me
+{% endblock %}
+
+{% block main %}
+<!--About Me Introduction Banner-->
+<div id="about-bg" class="card">
+  <div id="about-intro" class="card-body">
+    <h1>About <b>Me</b></h1>
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+        <ul>
+          <li>Nickname: Mond</li>
+          <li>Age: 22</li>
+          <li>Gender: Female</li>
+          <li>Hobbies: Listening to music, reading and writing books, and going to the gym</li>
+          <li>Language: English and Thai, with seven years of experience living in the U.S.</li>
+        </ul>
+        <p>
+          The rapid evolution of technology and the internet are some of humanity's greatest achievements.
+          Out of its many practical features, I'm fascinated by its ability to do good, like web applications
+          providing free education, machine learning models predicting diseases, or environmental monitoring
+          softwares
+          tracking deforestation. These are just some of the many examples that have inspired me to pursue a
+          degree in
+          Software Engineering.
+        </p>
+        <p><q>The only way to be satisfied is to do what you believe is great work.</q>- Steve
+          Jobs.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--My Education-->
+<div id="education" class="container text-start"></div>
+<h1 class="text-center mb-3">My <b>Education</b></h1>
+
+{% for education in educations %}
+<div class="education-card card mb-3">
+  <div class="row g-3">
+    <div class="col-md-4">
+      <img src="{{ education['image_path'] }}" class="img-fluid" alt="{{ education['image_alt'] }}">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <div class="card-title">
+          <img src="{{ education['logo_path'] }}" class="education-logo img-fluid" alt="{{ education['logo_alt'] }}">
+          <h3>{{ education["name"] }}</h3>
+          <h6 class="card-subtitle text-muted">{{ education["year"] }}</h6>
+        </div>
+        <div class="card-subtitle text-muted">
+          <h6>{{ education["program"] }}</h6>
+          <h6>GPAX: {{ education["gpax"] }}</h6>
+        </div>
+        <ul>
+          {% for accomplishment in education["accomplishments"] %}
+          <li>{{ accomplishment }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+<!--My Skills-->
+<div class="skills container text-center">
+  <h1 class="mb-2">My <b>Skills</b></h1>
+  <div class="row row-cols-3 g-4">
+
+    {% for skill in skills %}
+    <div class="col-md-2">
+      <div class="card">
+        <img src="{{ skill['path'] }}" class="card-img" alt="{{ skill['name']}} logo">
+        <div class="card-text">{{ skill["name"] }}</div>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+<div id="skills-description" class="container">
+  <div class="card">
+    <div class="card-body">
+      <ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="/static/skills.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let skills = document.querySelectorAll('.skills .card');
+    let html = '';
+    let clicked = [];
+    for (let i = 0; i < skills.length; i++) {
+      skills[i].addEventListener('click', function(event) {
+        if (!clicked.includes(i)) {
+          html += `<li>${SKILLS[i]}</li>`;
+          document.querySelector('#skills-description ul').innerHTML = html;
+        }
+        clicked.push(i);
+      });
+    }
+  });
+</script>
+{% endblock %}

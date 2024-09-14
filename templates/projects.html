@@ -1,0 +1,165 @@
+{% extends "layout.html" %}
+
+{% block title %}
+My Projects
+{% endblock %}
+
+{% block main %}
+<!--Backgroud-->
+<div id="project-bg" class="card">
+    <div id="project-intro" class="card-title text-center">
+        <h1>My <b>Projects</b></h1>
+    </div>
+</div>
+
+<div id="projects" class="container">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-4">
+                <video muted autoplay loop>
+                    <source src="/static/videos/project-1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">01</h2>
+                    <p class="card-title">Elderly Activity Monitoring System</p>
+                    <p class="card-text text-muted">
+                        This project is a activity detection and tracking system for the elderly, employing
+                        a
+                        custom trained computer vision model
+                        and transition algorithm. It utilizes web camera footage processed by Ultralytics
+                        YOLOv8
+                        for object detection and tracking.
+                        The system trains a custom model using pose estimation for activity recognition,
+                        with
+                        results stored in a Firebase database,
+                        accessible via a Flutter web app developed in Flutterflow.
+                    </p>
+                    <a href="https://github.com/nichamond143/elderly-activity-monitoring-system.git">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">02</h2>
+                    <p class="card-title">Puangun Mobile Application</p>
+                    <p class="card-text text-muted">
+                        This was a project in collaborated with the CITS MFU team to develop a mental
+                        health
+                        counseling mobile app for Chiang Rai Hill Tribe youth
+                        as part of a research project led by the Center of Excellence for Hill Tribe
+                        Health
+                        Research (CEHR). I was a front-end developer using Flutter
+                        for mobile development.
+                    </p>
+                    <div>
+                        <a href="https://play.google.com/store/apps/details?id=th.ac.mfu.puangun&hl=en">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a
+                            href="https://apps.apple.com/us/app/%E0%B9%80%E0%B8%9E-%E0%B8%AD%E0%B8%99%E0%B8%81-%E0%B8%99-puangun/id6464116153">
+                            <i class="bi bi-box-arrow-up-right"></i>
+                            <span>App Store</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/static/images/puangun.jpg"
+                                alt="Mond at the Puangun Application Orientation 2022 at Chiang Mai, Thailand">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/images/puangun-1.jpg"
+                                alt="Mond at the Puangun Application Orientation 2022 at Chiang Mai, Thailand">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/images/puangun-2.jpg"
+                                alt="Hill tribe village youth testing the Puangun Application at the Introduction Bootcamp at MFU">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/images/puangun-3.jpg"
+                                alt="Mond pulling an all-nighter to develop the Puangun Application with the CITS team">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/static/images/pharmeasy.png" class="card-img" alt="PharmEasy Application User Interface">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">03</h2>
+                    <p class="card-title">PharmEasy Mobile Application</p>
+                    <p class="card-text text-muted">
+                        This project is a mock telepharmacy application designed to offer digital
+                        medical consultations and medication delivery,
+                        targeting individuals who lack transportation, live in remote areas, or face
+                        difficulties visiting pharmacies due to long wait times or health issues.
+                        The app was developed using Flutter for mobile development and Firebase for the
+                        backend.
+                    </p>
+                    <a href="https://github.com/nichamond143/PharmEasy.git">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">04</h2>
+                    <p class="card-title">Aan Mai Mobile Application</p>
+                    <p class="card-text text-muted">
+                        Aanmai is a mobile application designed to recommend a curated selection of
+                        books handpicked by our team and notable figures from various industries.
+                        Whether you're struggling to decide what to read or looking for inspiration from
+                        the books that have influenced your role models, Aanmai has you covered. The app
+                        is developed using Flutter for the front end and Firebase for the back end.
+                    </p>
+                    <a href="https://github.com/nichamond143/aanmai-mobile-app.git">
+                        <i class="bi bi-box-arrow-up-right"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="/static/images/aanmai.png" class="card-img" alt="Aan Mai Application User Interface">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,3 @@
+HTML tags: <div>, <nav>, <main>, <footer>, <a>, <button>, <ul>, <li>, <img>, <video>
+CSS properties: #home-bg, .skills .card, body, footer, #home-bg::before
+I used Bootstrap to make the site responsive and JavaScript to create interactive skill sections where users can click to reveal more details about each skill.
