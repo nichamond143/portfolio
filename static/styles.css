@@ -181,7 +181,11 @@ footer {
 
 #education,
 #projects {
-    margin: 50px auto
+    margin: 50px auto;
+}
+
+.education-card{
+    margin: auto 5vw;
 }
 
 .education-card img {
@@ -231,7 +235,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: #000;
-    padding: 10px 0
+    padding: 10px 0;
 }
 
 @media (max-width:576px) {
@@ -300,12 +304,19 @@ footer {
 
 #projects .carousel-item {
     aspect-ratio: 1/1;
+}
+
+.education-card .carousel-item img {
+    aspect-ratio: 4/3;
+}
+
+.carousel-item {
     border: solid #fff;
     border-width: thin;
     border-radius: 5px
 }
 
-#projects .carousel-item img {
+.carousel-item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
